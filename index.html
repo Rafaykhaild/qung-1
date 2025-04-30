@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- Placeholder for header -->
+    <div id="site-header"></div>
+    <!-- Hero section -->
+    <div class="custom-slider-wrapper">
+      <div class="swiper customSwiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="WhatsApp Image 2025-04-22 at 01.55.35_46c8e81f.jpg"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="WhatsApp Image 2025-04-22 at 01.55.35_46c8e81f.jpg"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="WhatsApp Image 2025-04-22 at 01.55.35_46c8e81f.jpg"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="WhatsApp Image 2025-04-22 at 01.55.35_46c8e81f.jpg"
+              alt="Slide 4"
+            />
+          </div>
+        </div>
+        <div class="custom-slider-next swiper-button-next"></div>
+        <div class="custom-slider-prev swiper-button-prev"></div>
+      </div>
+      <div class="custom-slider-pagination swiper-pagination"></div>
+    </div>
+
+    <!-- Product Section -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar Desktop -->
+
+          <div class="col-lg-3 col-md-3 mb-4 d-lg-block">
+            <div id="sidebar-placeholder"></div>
+
+            <!-- <h1>sidebar place holder</h1> -->
+          </div>
+          <!-- Product Grid -->
+          <div class="col-lg-9 col-md-12" id="productGridColumn">
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap mb-3 section-header"
+            >
+              <div>
+                <h2 class="mb-0">New Arrivals</h2>
+                <p class="text-muted mb-0">新着アイテム</p>
+              </div>
+              <button
+                class="btn btn-outline-dark btn-sm d-lg-none"
+                id="toggleSidebarBtn"
+              >
+                <i class="fas fa-bars me-1"></i> canva
+                <!-- カテゴリ -->
+              </button>
+            </div>
+
+            <div class="row g-4" id="product-list"></div>
+
+            <!-- login cta box -->
+            <div class="login-cta-box text-center">
+              <p class="fw-bold mb-3">ログインしてさらに見る</p>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="btn login-cta-btn">ログイン</a>
+                <a href="#" class="btn login-cta-btn">新規会員登録</a>
+              </div>
+            </div>
+            <!-- end of login cta box -->
+            <!-- ranking section products -->
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap mb-3 section-header"
+            >
+              <div>
+                <h2 class="mb-0">Ranking</h2>
+                <p class="text-muted mb-0">ランキング</p>
+              </div>
+            </div>
+            <!-- end of ranking section products -->
+            <!-- ranking-products-card- fethcing from file -->
+            <div class="row g-4" id="ranking-products-card-list"></div>
+            <!-- end of ranking-products-card- fethcing from file  -->
+
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap mb-3 section-header"
+              style="margin-top: 70px"
+            >
+              <div>
+                <h2 class="mb-0">Recommended Items</h2>
+                <p class="text-muted mb-0">おすすめアイテム</p>
+              </div>
+            </div>
+            <!-- end of ranking section products -->
+            <!-- recomanded-products fethcing from file -->
+            <div class="row g-4" id="recomanded-products-list"></div>
+            <!-- end of recomanded-products fethcing from file  -->
+
+            <!-- login cta box -->
+            <div class="login-cta-box text-center">
+              <p class="fw-bold mb-3">ログインしてさらに見る</p>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="btn login-cta-btn">ログイン</a>
+                <a href="#" class="btn login-cta-btn">新規会員登録</a>
+              </div>
+            </div>
+            <!-- end of login cta box -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorise cards section -->
+    <section class="category-section text-center py-5">
+      <div class="section-heading mb-4">
+        <h2 class="fw-light">CATEGORIES</h2>
+        <p class="text-muted">カテゴリ</p>
+      </div>
+      <div class="container-fluid lg-container">
+        <div class="row g-3">
+          <!-- Top 2 -->
+          <div class="col-md-6">
+            <div
+              class="category-tile"
+              style="background-image: url('Tile.png')"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="category-tile"
+              style="background-image: url('Qung\ made.png')"
+            ></div>
+          </div>
+
+          <!-- Middle 6 -->
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('Tops.png')"
+            ></div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('Dresses.png')"
+            ></div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('outer\ wear.png')"
+            ></div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('bottoms.png')"
+            ></div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('bags.png')"
+            ></div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="mid-category"
+              style="background-image: url('accessories.png')"
+            ></div>
+          </div>
+
+          <!-- Bottom 2 -->
+          <div class="col-md-6">
+            <div
+              class="category-tile"
+              style="background-image: url('luxury.png')"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="category-tile"
+              style="background-image: url('ments.png')"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Carousel Section -->
+    <section class="insta-carousel-section py-5">
+      <div class="text-center mb-4">
+        <i class="fab fa-instagram fa-lg"></i>
+        <h2 class="fw-light">INSTAGRAM</h2>
+      </div>
+      <div class="container-lg">
+        <div class="swiper instaSwiper">
+          <div class="swiper-wrapper">
+            <!-- Repeat Slide -->
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="Tile.png" class="img-fluid" alt="Instagram Image" />
+              <p class="small mt-2">@instagram_handle</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-dark rounded-pill px-4 py-2">FOLLOW</button>
+        </div>
+      </div>
+    </section>
+    <!-- End of Instagram Carousel Section -->
+    <div id="site-footer"></div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>

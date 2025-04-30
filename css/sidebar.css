@@ -1,0 +1,130 @@
+/* Canvas style for small screen */
+
+  #sidebarWrapper {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 9999; /* 🔥 VERY IMPORTANT */
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+  }
+  
+  
+  #sidebarWrapper.show {
+    left: 0;
+  }
+
+  #closeSidebarCanvasBtn {
+    background: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Sidebar container shared by both versions */
+  .sidebar-inner {
+    padding: 20px;
+  }
+  
+  .fm-accordion-container {
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .fm-category {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .fm-category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .fm-category-title::after {
+    content: "▼";
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .fm-category.active .fm-category-title::after {
+    content: "▲";
+  }
+  
+  .fm-category-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .fm-category.active .fm-category-content {
+    max-height: 500px;
+  }
+  
+  .fm-option-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 8px 20px;
+    font-size: 14px;
+  }
+  
+  .fm-checkbox {
+    margin-right: 10px;
+  }
+  
+  .fm-new-arrival {
+    font-weight: 400;
+  }
+  /* Button styles */
+        .fm-button-container {
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .fm-submit-button {
+            background-color: #3c2f2a;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .fm-submit-button:hover {
+            background-color: #4e3e38;
+        }
+        
+        .fm-clear-button {
+            background-color: transparent;
+            color: #999;
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        .fm-clear-button:hover {
+            color: #666;
+        }
+
+
